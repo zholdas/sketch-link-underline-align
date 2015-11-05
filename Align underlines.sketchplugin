@@ -1,0 +1,34 @@
+// Align underlines (alt cmd l)
+var doc = context.document
+
+var all_layers = [[doc currentPage] children]
+
+for(var i=0; i < [all_layers length]; i++) {
+
+	var group_layer = all_layers.objectAtIndex(i)	  
+	
+	if(group_layer.isKindOfClass(MSLayerGroup)) {
+
+		var inner_layers = [group_layer layers]
+		var inner_layers_number = [inner_layers length]
+
+		for(var j=0; j<inner_layers_number; j++) {
+
+			var underline_layer = inner_layers.objectAtIndex(j)
+
+			if([underline_layer name] == "underline") {
+			
+				for(var k=0; k<inner_layers_number; k++) {
+
+					var text_layer = inner_layers.objectAtIndex(k)
+			
+					if(text_layer.isKindOfClass(MSTextLayer)) {
+
+						underline_layer.frame().setX(text_layer.frame().x())
+						underline_layer.frame().setWidth(text_layer.frame().width())
+					}
+				}
+			}
+		}
+	}
+}
