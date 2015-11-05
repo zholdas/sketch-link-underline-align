@@ -1,10 +1,10 @@
 # sketch-link-underline-align
 Properly align link underline layers regardless of their text in Sketch
 
-From this
+**From this**
 ![demo][demo1-image]
 
-To this
+**To this**
 ![demo][demo2-image]
 
 # Description
