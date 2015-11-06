@@ -26,7 +26,7 @@ Folder name and plugin filename will show up as items in Sketch `Plugins` menu.
 
 # Usage
 
-1. Your links should be groups of text and line layers. Line layer should be named "underline".
+1. Your links should be groups of text and line layers. Line layer should be named "**underline**".
 2. `Alt + Cmd + L` or use `Plugins` menu.
 3. Demo of usage https://vimeo.com/144720669
 
