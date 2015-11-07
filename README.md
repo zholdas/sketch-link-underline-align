@@ -35,9 +35,9 @@ Folder name and plugin filename will show up as items in Sketch `Plugins` menu.
 
 ## Usage
 
-1. Your links should be groups of text and line layers. Line layer should be named "**underline:0**".
-2. `Alt + Cmd + L` or use `Plugins` menu.
-3. Demo of usage https://vimeo.com/144720669
+1. Your links should be groups of text and line layers. Line layer should be named "**underline:0**". By default underline aligned by bottom border of text layer and this border is depends on line height of text layer. Aditionally you can adjust vertical space between text and underline by changing the value after colon underline:**0**.
+2. Keyboard shortcut: `Alt + Cmd + L` or use `Plugins` menu.
+3. Demo of usage https://vimeo.com/144957919
 
 ## Changing the Default Keyboard Shortcut
 
