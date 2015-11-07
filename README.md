@@ -10,10 +10,10 @@ Version 1.1:
 
 ## Demo
 
-**From this**
+**Before**
 ![demo][demo1-image]
 
-**To this**
+**After**
 ![demo][demo2-image]
 
 ## Description
