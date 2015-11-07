@@ -54,9 +54,7 @@ choose "Open Plugins Folder".
     
     Change it.
 
-## License
 
-MIT
 
 [demo1-image]: http://i.imgur.com/9PL2oSM.png
 [demo2-image]: http://i.imgur.com/2lbzsiq.png
