@@ -16,7 +16,10 @@ for(var i=0; i < [all_layers length]; i++) {
 
 			var underline_layer = inner_layers.objectAtIndex(j)
 
-			if([underline_layer name] == "underline") {
+			var splitLayer = [underline_layer name].split(':')
+			//log(splitLayer[1])
+
+			if(splitLayer[0] == "underline") {
 			
 				for(var k=0; k<inner_layers_number; k++) {
 
@@ -25,6 +28,10 @@ for(var i=0; i < [all_layers length]; i++) {
 					if(text_layer.isKindOfClass(MSTextLayer)) {
 
 						underline_layer.frame().setX(text_layer.frame().x())
+						underline_layer.frame().setY(parseFloat(text_layer.frame().height())+parseFloat(splitLayer[1]))
+						log(text_layer.frame().y())
+						log(text_layer.frame().height())
+						log(parseFloat(text_layer.frame().height())+parseFloat(splitLayer[1]))
 						underline_layer.frame().setWidth(text_layer.frame().width())
 					}
 				}
