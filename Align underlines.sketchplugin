@@ -2,15 +2,16 @@
 var doc = context.document
 
 var all_layers = [[doc currentPage] children]
+console.log(all_layers);
 
-for(var i=0; i < [all_layers length]; i++) {
+for(var i=0; i < [all_layers.length]; i++) {
 
 	var group_layer = all_layers.objectAtIndex(i)	  
 	
 	if(group_layer.isKindOfClass(MSLayerGroup)) {
 
 		var inner_layers = [group_layer layers]
-		var inner_layers_number = [inner_layers length]
+		var inner_layers_number = [inner_layers.length]
 
 		for(var j=0; j<inner_layers_number; j++) {
 
